@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Layout: Header with Nav -->
+    <header>
+        <nav>
+            <div class="logo">Brew & Bean</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section with exactly 4 sections (hero, about, menu, contact) -->
+    <main>
+        
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Brew & Bean Cafe</h1>
+                <p>Your perfect spot for freshly brewed coffee and cozy vibes.</p>
+                <a href="#menu" class="btn">Explore Menu</a>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We source the finest beans to bring you a premium coffee experience every single day.</p>
+            
+            <h3>Our Features</h3>
+            <!-- A List (features) -->
+            <ul>
+                <li>Organic Beans</li>
+                <li>Cozy Ambience</li>
+                <li>Free Wi-Fi</li>
+            </ul>
+        </section>
+
+        <!-- 3. Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Menu Card 1 with "Best seller" badge -->
+                <div class="menu-card">
+                    <span class="badge">Best Seller</span>
+                    <!-- Image 1 with alt text -->
+                    <img src="https://unsplash.com" alt="Espresso Coffee">
+                    <h4>Espresso</h4>
+                    <p>Rich and bold classic espresso shot.</p>
+                </div>
+                
+                <!-- Menu Card 2 -->
+                <div class="menu-card">
+                    <!-- Image 2 with alt text -->
+                    <img src="https://unsplash.com" alt="Cafe Latte">
+                    <h4>Latte</h4>
+                    <p>Creamy steamed milk with a smooth espresso base.</p>
+                </div>
+            </div>
+
+            <h3>Opening Hours</h3>
+            <!-- A Table (opening hours) -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>8:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM - 11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 4. Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <!-- Contact form with labels, inputs and required fields -->
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Brew & Bean Cafe. All rights reserved.</p>
+    </footer>
+
+    <!-- Fixed back-to-top link -->
+    <!-- Image 3 with alt text used inside the back-to-top layout or hidden baseline -->
+    <img src="https://unsplash.com" alt="Cafe Icon Footer" style="display:none;">
+    <a href="#hero" class="back-to-top">↑ Top</a>
+
+</body>
+</html>
