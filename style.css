@@ -57,3 +57,103 @@ nav ul li a {
 nav ul li a:hover {
     color: #d4a373;
 }
+/* Hero section with background image and gradient overlay */
+.hero-section {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Menu cards with shadows */
+.menu-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+/* Hover effects on buttons */
+.btn {
+    display: inline-block;
+    background-color: #4a2c2a;
+    color: white;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d4a373;
+    color: #333;
+}
+
+/* Zebra rows using nth-child */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eadfd5;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}/* Best Seller badge positioning */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d4a373;
+    color: #333;
+    padding: 0.4rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Fixed Back-to-Top link */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a2c2a;
+    color: white;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #d4a373;
+    color: #333;
+}
